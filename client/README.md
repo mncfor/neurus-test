@@ -1,4 +1,4 @@
-# neurus-test
+# Client-side
 
 ## Project setup
 ```
