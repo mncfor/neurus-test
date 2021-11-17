@@ -1,0 +1,18 @@
+body{
+	font-family: $font-family;
+	font-weight: $font-regular;
+	color: $color-text;
+}
+
+.t-strong{
+	font-weight: $font-bold;
+}
+
+.t-muted{
+	font-size: 0.85em;
+	color: $color-text-muted;
+}
+
+.t-warning{
+	color: $color-warning;
+}

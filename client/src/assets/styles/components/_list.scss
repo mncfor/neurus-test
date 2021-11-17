@@ -1,0 +1,30 @@
+.list{
+    &__item{
+        padding: 0.5em 1.5em;
+        display: flex;
+        align-items: center;
+        transition: background-color 0.2s ease;
+        &:hover{
+            background-color: $color-border;
+            .list__settings{
+                opacity: 1;
+            }
+        }
+    }
+
+    &__name{
+        font-size: 0.9em;
+        max-width: 250px;
+        margin-right: 2em;
+    }
+
+    &__settings{
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        gap: 0.3em;
+        opacity: 0.5;
+        transition: opacity 0.2s ease;
+    }
+
+}

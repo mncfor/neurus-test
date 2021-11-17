@@ -1,0 +1,111 @@
+.session{
+    border-radius: $b-radius;
+    border: 2px solid $color-palette-1;
+    width: 430px;
+    box-shadow: 1px 1px 6px rgba($color-palette-1, 0.5);
+    position: relative;
+    background-color: white;
+    font-size: 0.95em;
+    flex-shrink: 0;
+    overflow: hidden;
+    &.isSubmited{
+        border: none;
+        box-shadow: 1px 1px 6px rgba($color-palette-2, 0.5);
+        &:before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: block;
+            height: 100%;
+            width: 5px;
+            background-color: $color-palette-2;
+        }
+
+        .session__header{
+            background-color: rgba($color-palette-2, 0.08);    
+        }
+
+        .session__avatar{
+            background-color: $color-palette-2;    
+        }
+    }
+
+    &__header{
+        background-color: rgba($color-palette-1, 0.08);
+        display: flex;
+        align-items: center;
+        padding: 0.5em 1.5em;
+        border-bottom: 1px solid $color-border;
+    }
+
+    &__avatar{
+        border-radius: 50%;
+        background-color: $color-palette-1;
+        color: white;
+        width: 50px;
+        height: 50px;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1em;
+        i{
+            display: inline-block;
+            font-size: 1.3em;
+        }
+    }
+
+    &__session-info{
+        font-size: 0.9em;
+        margin-right: 1em;
+        max-width: 130px;
+    }
+
+    &__user-info{
+        font-size: 0.9em;
+        margin-right: 3em;
+    }
+
+    &__edit{
+        margin-left: auto;
+    }
+
+    &__more{
+        margin-left: 0.5em;
+    }
+
+    &__success{
+        color: $color-success;
+        margin-left: auto;
+    }
+
+    &__body-head{
+        padding: 0.5em 1.5em;
+        display: flex;
+        font-size: 0.9em;
+        align-items: center;
+        div:first-child{
+            margin-right: auto;
+        }
+        i{
+            color: $color-palette-2;
+            margin-left: 1em;
+            font-size: 1.1em;
+        }
+    }
+
+    &__body{
+        padding: 1em 0em;
+        border-bottom: 1px solid $color-border;
+        border-top: 1px solid $color-border;
+    }
+
+    &__footer{
+        display: flex;
+        justify-content: space-between;
+        gap: 1em;
+        padding: 1em 1.5em;
+    }
+
+}
